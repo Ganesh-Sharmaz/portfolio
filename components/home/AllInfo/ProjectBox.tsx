@@ -11,6 +11,43 @@ type ProjectItem = {
 
 const mockProjects: ProjectItem[] = [
   {
+    title: "Truetym – MSME HR & Payroll Platform",
+    description:
+      "Enterprise HR & payroll platform for MSMEs with RBAC, payroll workflows, secure auth, and performance-optimized dashboards.",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "TanStack Query",
+      "NextAuth",
+      "Razorpay",
+      "FIDO2",
+      "HR Tech",
+    ],
+    liveHref: "https://truetym-ui.vercel.app/",
+  },
+  {
+    title: "Babbler – WhatsApp Bulk Messaging SaaS",
+    description:
+      "WATI-like WhatsApp SaaS enabling template creation, campaigns, contact segmentation, and real-time chat using WebSockets and Meta APIs.",
+    tags: [
+      "Next.js",
+      "WebSockets",
+      "WhatsApp Cloud API",
+      "Meta Business API",
+      "RBAC",
+      "SaaS",
+    ],
+    liveHref: "https://babbler.makunaiglobal.ai/dashboard",
+  },
+  {
+    title: "College Hai – Public SEO Platform",
+    description:
+      "SEO-first education platform with exams, news, blogs, and dynamic content. Built with SSR, metadata optimization, and performance-focused UI.",
+    tags: ["Next.js", "SEO", "SSR", "JSON-LD", "Lighthouse", "Vercel"],
+    sourceHref: "https://collegehai.com/",
+    liveHref: "https://collegehai.com/",
+  },
+  {
     title: "SHNK – Dev Task Automation CLI",
     description:
       "Python CLI that scaffolds projects (React + Tailwind, Next.js soon), configures deps, and launches dev servers.",
@@ -68,7 +105,7 @@ const mockProjects: ProjectItem[] = [
 
 const ProjectBox = () => {
   return (
-    <div className="grid grid-cols-1 sm:gap-6 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-6 gap-6">
       {mockProjects.map((p) => (
         <ProjectCard
           key={p.title}

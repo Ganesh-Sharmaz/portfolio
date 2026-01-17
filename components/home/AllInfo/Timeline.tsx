@@ -9,18 +9,74 @@ type TimelineEntry = {
 };
 
 const timelineData: TimelineEntry[] = [
-  // Present - Working at Makunai
   {
-    date: "Jun 15, 2025 – Present",
+    date: "Nov 13, 2025 – Present",
+    isHighlight: true,
     items: [
-      { 
+      {
         parts: [
-          { type: "text", text: "Building Babbler – omnichannel SaaS platform with WhatsApp Cloud API, template management, and real-time chat. This project represents everything I've learned, combining scalable architecture with enterprise features." }
+          { type: "text", text: "Joined " },
+          { type: "link", text: "Truetym Inc.", href: "https://truetym.vercel.app" },
+          { type: "text", text: " as Associate Software Developer (Remote, USA). Working on Truetym – an MSME HR & Payroll platform, building scalable dashboards, authentication systems, RBAC, payroll workflows, and performance-optimized frontend architecture." },
+          { type: 'link', text: " Truetym", href: "https://truetym-ui.vercel.app" },
         ]
       },
+      {
+        parts: [
+          { type: "text", text: "📍 Remote role based out of " },
+          { type: "text", text: "828 E Market St, Louisville, KY 40206, USA." }
+        ]
+      }
     ],
   },
-  
+  {
+    date: "Nov 10, 2025",
+    items: [
+      {
+        parts: [
+          { type: "text", text: "Resigned from Makunai Global after successfully delivering the Babbler MVP and completing the transition of responsibilities." }
+        ]
+      }
+    ],
+  },
+  {
+    date: "Oct 10 – Nov 10, 2025",
+    items: [
+      {
+        parts: [
+          { type: "text", text: "Promoted to Associate Software Developer at " },
+          { type: "link", text: "Makunai Global", href: "https://www.makunaiglobal.ai/" },
+          { type: "text", text: " after receiving a Pre-Placement Offer (PPO). Continued working on Babbler MVP, owning core frontend features and stabilizing real-time messaging workflows." }
+        ]
+      }
+    ],
+  },
+  {
+    date: "Oct 10, 2025",
+    isHighlight: true,
+    leadingIcon: <span>🚀</span>,
+    items: [
+      {
+        parts: [
+          { type: "text", text: "Successfully completed internship at " },
+          { type: "link", text: "Makunai Global", href: "https://www.makunaiglobal.ai/" },
+          { type: "text", text: " and received a Pre-Placement Offer (PPO). Promoted to Associate Software Developer on the same day — a major career milestone." }
+        ]
+      }
+    ],
+  },
+  // Present - Working at Makunai
+  {
+    date: "Jun 15 – Nov 10, 2025",
+    items: [
+      {
+        parts: [
+          { type: "text", text: "Built Babbler – omnichannel SaaS platform with WhatsApp Cloud API, template management, campaigns, and real-time chat. This project marked my transition from intern to full-time engineer and ownership of production-grade features." }
+        ]
+      }
+    ],
+  },
+
   // Hackathon Victory
   {
     date: "June 2025",
@@ -284,7 +340,7 @@ const Timeline = () => {
           isHighlight={entry.isHighlight}
         />
       ))}
-      
+
       {!showAll && timelineData.length > 9 && (
         <div className="mt-8 text-center">
           <button
