@@ -1,5 +1,5 @@
 import React from "react";
-import ProfilePic from "../../assets/Ganesh_github_dp.jpg"
+import ProfilePic from "../../assets/ganesh-suit-close-up.png";
 import Image from "next/image";
 import { GithubIcon, LinkedinIcon, Mail, TwitterIcon } from "lucide-react";
 import ActionButton, { ActionButtonProps } from "@/components/ui/ActionButton";

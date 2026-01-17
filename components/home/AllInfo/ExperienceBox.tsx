@@ -26,7 +26,7 @@ const experiences: Experience[] = [
     id: 1,
     company: "Truetym Inc.",
     companyLink: "https://truetym.com",
-    location: "Noida, India",
+    location: "828 E Market St, Louisville KY 40206, USA",
     duration: "Nov 13, 2025 – Present",
     techTags: [
       "Next.js",
