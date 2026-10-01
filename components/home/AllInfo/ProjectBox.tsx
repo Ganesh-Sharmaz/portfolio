@@ -7,9 +7,17 @@ type ProjectItem = {
   tags: string[];
   sourceHref?: string;
   liveHref?: string;
+  policyHref?: string;
 };
 
 const mockProjects: ProjectItem[] = [
+  {
+    title: "Arrow Out — Mobile Puzzle Game",
+    description:
+      "A mobile puzzle game focused on thoughtful path planning, progression, and a polished play experience.",
+    tags: ["Android", "Mobile Game", "Puzzle"],
+    policyHref: "/portfolio/arrow-out/privacy/",
+  },
   {
     title: "Truetym – MSME HR & Payroll Platform",
     description:
@@ -114,6 +122,7 @@ const ProjectBox = () => {
           tags={p.tags}
           sourceHref={p.sourceHref}
           liveHref={p.liveHref}
+          policyHref={p.policyHref}
         />
       ))}
     </div>

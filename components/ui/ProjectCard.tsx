@@ -7,6 +7,7 @@ interface ProjectCardProps {
   tags: string[];
   sourceHref?: string;
   liveHref?: string;
+  policyHref?: string;
   className?: string;
 }
 
@@ -16,6 +17,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   tags,
   sourceHref,
   liveHref,
+  policyHref,
   className = "",
 }) => {
   return (
@@ -56,6 +58,14 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             >
               <Github size={16} />
               <span>Source Code</span>
+            </a>
+          ) : null}
+          {policyHref ? (
+            <a
+              href={policyHref}
+              className="flex items-center sm:gap-2 gap-1 text-sm text-[#0D1321]/80 dark:text-white/80 hover:underline"
+            >
+              <span>Privacy Policy</span>
             </a>
           ) : null}
         </div>
